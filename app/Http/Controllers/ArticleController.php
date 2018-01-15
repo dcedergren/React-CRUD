@@ -27,8 +27,8 @@ class ArticleController extends Controller
     public function store(Request $request)
     {
         $image = $request->img;
-        $uploadTo = 'uploads';
-        $fileName = str_random(40) . '.jpg';
+        $uploadTo = 'uploads/' . str_random(14);
+        $fileName = $image->getClientOriginalName();
         $success = $image->move($uploadTo, $fileName);
 
         if($success)
@@ -37,6 +37,7 @@ class ArticleController extends Controller
             $article->title = $request->title;
             $article->text = $request->text;
             $article->img = '../' . $success;
+            $article->slug = str_slug($request->title, '-');
             $article->save();
             return response()->json('Successfully added');
         }

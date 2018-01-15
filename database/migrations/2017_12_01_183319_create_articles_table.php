@@ -19,6 +19,7 @@ class CreateArticlesTable extends Migration
             $table->string('title');
             $table->string('img');
             $table->text('text');
+            $table->string('slug');
         });
     }
 

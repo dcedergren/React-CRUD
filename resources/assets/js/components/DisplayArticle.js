@@ -73,13 +73,12 @@ class DisplayItem extends Component
 						<tr>
 							<td><b>ID</b></td>
 							<td><b>Titel</b></td>
-							<td><b>Bild</b></td>
-							<td><b>Text</b></td>
+							<td><b>Senast ändrad</b></td>
 							<td></td>
 						</tr>
 					</thead>
 					<tbody>
-						{this.tabRow()}
+						{ this.tabRow() }
 					</tbody>
 				</table>
 			</div>

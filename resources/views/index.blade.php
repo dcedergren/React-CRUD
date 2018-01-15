@@ -20,6 +20,9 @@
     <body id="body" class="">
 
         <div id="admin"></div>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            {{ csrf_field() }}
+        </form>
         <script src="{{ asset('js/app.js') }}"></script>
 
     </body>

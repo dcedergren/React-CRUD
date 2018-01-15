@@ -28,10 +28,7 @@ class TableRow extends Component
 					{this.props.obj.title}
 				</td>
 				<td>
-					{this.props.obj.img}
-				</td>
-				<td>
-					{this.props.obj.text}
+					{this.props.obj.updated_at}
 				</td>
 				<td>
 					<Link to={"edit/"+this.props.obj.id} className="btn btn-primary">Edit</Link>
