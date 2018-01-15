@@ -13,7 +13,7 @@
         <!-- styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-        <title>React - CRUD</title>
+        <title>Admin</title>
 
     </head>
 

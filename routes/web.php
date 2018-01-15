@@ -38,5 +38,5 @@ Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 Route::post('register', 'Auth\RegisterController@register');
 Route::get('/add-user', function () {
     return view('index');
-})->middleware('auth');
+})->middleware('guest');
 
